@@ -9,7 +9,11 @@ body{
 }
 
 .nav-item > a {
-    font-weight: 600;
+    font-weight: 900;
+    color: #0d1fa7;
+}
+.nav-item > div {
+  color: #0d1fa7;
 }
 
 /* .navbar-toggler-icon {
@@ -67,12 +71,17 @@ a#call-back {
 .call-back {
     margin-top: 50px;
     position: absolute;
-    right: 100px;
+    right: 50px;
 }
 @media (max-width:700px){
     #call-back {
         padding-bottom: 50px;
     }
+}
+@media (max-width: 426px) {
+  #call-back {
+    visibility: hidden;
+  }
 }
 
 #info-desc {
