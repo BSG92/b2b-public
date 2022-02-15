@@ -164,6 +164,11 @@ a#call-back {
     font-size: 1.3em;
 }
 
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
 .social-media div {
     margin-left: 20px;
     margin-right: 20px;
