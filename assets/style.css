@@ -72,6 +72,16 @@ h1.title {
     }
 }
 
+@media (max-width:990px) {
+    .navbar-toggler {
+        font-size: 2rem;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 a#call-back {
     text-decoration: none;
     font-weight: bold;
