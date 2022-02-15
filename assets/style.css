@@ -43,7 +43,7 @@ li.contact > div {
 }
 
 h1.title {
-    color: thistle;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* font-family: 'Valera Round'; */
     font-weight: bolder;
@@ -72,6 +72,11 @@ h1.title {
     }
 }
 
+@media (max-width:777px) {
+    #info-desc > #about > h1 {
+        font-size: 2em;
+    }
+}
 @media (max-width:990px) {
     .navbar-toggler {
         font-size: 2rem;
