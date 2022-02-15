@@ -66,6 +66,10 @@ h1.title {
         letter-spacing: 2px;
         word-spacing: 5px;
     }
+    .description > h4:nth-child(2){
+        letter-spacing: 1px;
+        word-spacing: normal;
+    }
 }
 
 a#call-back {
