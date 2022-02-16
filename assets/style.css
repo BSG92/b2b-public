@@ -73,7 +73,7 @@ h1.title {
 }
 
 @media (max-width:777px) {
-    #info-desc > #about > h1 {
+    h1.title {
         font-size: 2em;
     }
 }
@@ -92,21 +92,20 @@ a#call-back {
     font-weight: bold;
     color: black;
     background-color: white;
-    padding: 15px 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .call-back {
     margin-top: 50px;
     position: absolute;
     right: 50px;
 }
-@media (max-width:700px){
-    #call-back {
-        padding-bottom: 50px;
-    }
-}
+
 @media (max-width: 426px) {
-    .call-back {
-        padding-top: 50px;
+    h1.title {
+        font-size: 1.60rem;
     }
 
     .logo {
@@ -114,6 +113,28 @@ a#call-back {
         height: 60px;
     }
 
+    .contact_us {
+        margin-top: 80px;
+    }
+
+    #contact_us {
+        width: 100%;
+    }
+
+    .call-back {
+        position: relative;
+        margin-left: 50px;
+        /* padding-top: 50px; */
+        width: 100%;
+    }
+    #call-back {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    
 }
 
 #info-desc {
