@@ -105,8 +105,8 @@ a#call-back {
     }
 }
 @media (max-width: 426px) {
-    #call-back {
-        visibility: hidden;
+    .call-back {
+        padding-top: 50px;
     }
 
     .logo {
@@ -128,7 +128,7 @@ a#call-back {
 @media (max-width:1176px) {
     #info-desc {
         display: block;
-        margin: auto;
+        /* margin: auto; */
     }
 }
 
