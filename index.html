@@ -22,12 +22,12 @@
     <div class="container">
         <div id="header">
             <div class="dropdown">
-                <a class="btn dropdown-toggle text-white" href="#" role="button" id="langSelect" data-bs-toggle="dropdown" aria-expanded="false">
-                    EN | RU
+                <a class="btn dropdown-toggle txt-medium-white" href="#" role="button" id="langSelect" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN | Ру
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="langSelect">
-                    <li><a class="dropdown-item active" href="#">Русский</a></li>
-                    <li><a class="dropdown-item" href="index-en.php">English</a></li>
+                    <li><img src="assets/images/ru.svg" style="height: 30px; width:30px;"><a class="dropdown-item active txt-medium-white" href="#">Русский</a></li>
+                    <li><img src="assets/images/en.svg" style="height: 30px; width:30px;"><a class="dropdown-item txt-medium-white" href="index-en.php">English</a></li>
                 </ul>
             </div>
             <h1 id="site-name" translate="no">Babysitter to Business</h1>
@@ -79,16 +79,16 @@
                     <!-- <h1 class="title" translate="no">Babysitter to Business</h1> -->
 
                     <div class="description">
-                        <h4 class="txt-description-white">Помогаем бизнесу расти!</h4>
-                        <h4 class="txt-description-white">Работаем 24/7 по всему миру</h4>
-                        <h4 class="txt-description-white">Постоянный прогресс - основа нашей компаннии</h4>
+                        <h4 class="txt-medium-white">Помогаем бизнесу расти!</h4>
+                        <h4 class="txt-medium-white">Работаем 24/7 по всему миру</h4>
+                        <h4 class="txt-medium-white">Постоянный прогресс - основа нашей компаннии</h4>
                     </div>
                 </div>
 
-                <div class="call-back" style="display: block;">
+                <!-- <div class="call-back" style="display: block;">
                     <a id="call-back" href="" type="button"
                     data-bs-toggle="modal" data-bs-target="#modal_contact-us">Обратный звонок</a>
-                </div>
+                </div> -->
             </div>
             <div class="contact_us">
                 <button type="button" id="contact_us" class="btn bg-yellow"
@@ -97,7 +97,7 @@
         </div>
 
         <!-- Contact us Modal -->
-        <div class="modal fade" id="modal_contact-us" tabindex="-1">
+        <!-- <div class="modal fade" id="modal_contact-us" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -120,7 +120,7 @@
                         </div>
                         <div class="input-group mb-5">
                             <button type="button" id="call-back_send" class="btn btn-primary">Отправить</button>
-                        </div>
+                        </div> 
                     </div>
                     <div class="modal-footer">
                         <div class="text-wrap fs-6">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-        </div><!-- END of Contact Us Modal -->
+        </div>END of Contact Us Modal -->
 
         <!-- Get in touch Modal -->
         <div class="modal fade" id="modal_getintouch" tabindex="-1">
@@ -148,21 +148,56 @@
                             <button type="button" class="btn-close"
                             data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <p style="text-align: center;" class="bi bi-phone text-primary">+7(994)408-45-19</p>
+                        <hr>
+                        <p style="text-align: center;" class="bi bi-phone text-primary">&nbsp; +7 (994) 408-45-19</p>
+                        <p style="text-align: center;" class="bi bi-envelope text-primary">&nbsp; b2b-contakt@yandex.ru</p>
                         <div style="display: flex; justify-content: center; column-gap: 10px;">
-                            <p class="bi bi-whatsapp text-primary"></p>
-                            <p class="bi bi-telegram text-primary"></p>
-                            <p class="text-primary">Viber</p>
+                            <div class="social-media">
+                                <a href="https://api.whatsapp.com/send?phone=79533571234&text=%D0%AF%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%20%D0%B1%D1%8B%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8%20%D0%BE%20%D0%B2%D0%B0%D1%88%D0%B8%D1%85%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B0%D1%85" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
+                                title="WhatsApp"><img src="assets/images/social-media-icons/blue/icons8-whatsapp-50.png"></a>
+                                <div class="vline"></div>
+                                <a href="http://" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
+                                title="Telegram"><img src="assets/images/social-media-icons/blue/icons8-telegram-50.png"></a>
+                                <div class="vline"></div>
+                                <a href="https://www.facebook.com/b2b.compania" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
+                                title="facebook"><img src="assets/images/social-media-icons/blue/icons8-facebook-50.png"></a>
+                                <div class="vline"></div>
+                                <a href="https://www.instagram.com/babysitter_to_business" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
+                                title="instagram"><img src="assets/images/social-media-icons/blue/icons8-instagram-50.png"></a>
+                                <div class="vline"></div>
+                                <a href="https://vk.com/babysitter_to_business" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
+                                title="vk.com"><img src="assets/images/social-media-icons/blue/icons8-vk-50.png"></a>
+                                <div class="vline"></div>
+                                <a href="https://www.youtube.com/channel/UCxj1_zCBLQYX9gKry766zSQ" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
+                                title="YouTube"><img src="assets/images/social-media-icons/blue/icons8-youtube-play-64.png"></a>
+                            </div>
                         </div>
 
                         <div style="margin-top: 20px; text-align: center;">
-                            <p>Или оставляйте заявку</p>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" id="modal_getintouch_phone"
-                                placeholder="Ваш номер телефона">
-                            </div>
-                            <div class="input-group mb-5">
-                                <button type="button" id="modal_getintouch_send" class="btn btn-primary">Отправить</button>
+                            <p style="font-weight: 600;">Или оставляйте заявку, а мы перезвоним вам</p>
+                            <form action="admin/submit-contacts.inc.php" method="post">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="name"
+                                    placeholder="Ваше имя">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="telephone"
+                                    placeholder="Ваш номер телефона">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="email"
+                                    placeholder="Email">
+                                </div>
+                                <div class="input-group mb-5" style="display: grid;">
+                                    <button type="button" id="modal_getintouch_send" class="btn btn-primary"
+                                    style="margin: auto; font-size:1.2em; font-weight: 600;">Отправить</button>
+                                </div>
+                            </form>
+                            <hr>
+                            <div class="fs-6 text-center">
+                                Отправляя данные, вы соглашаетесь с условиями
+                                <div class="txt-blue" style="text-decoration-line: underline; text-decoration-color: #002366;">Польсовательского соглашения</div>
+                                (Политики конфиденциальности)
                             </div>
                         </div>
                     </div>
@@ -187,7 +222,7 @@
                         </div>
                         <div class="item mb-4">
                             <div class="card border-0 shadow pt-3 pb-3">
-                                <img src="assets/images/our-clients/pufzer.jpg" alt=""
+                                <img src="assets/images/our-clients/logos/pufzer.jpg" alt=""
                                 class="card-img-top ourclient-image ">
                             </div>
                         </div>
@@ -203,6 +238,12 @@
                                 class="card-img-top ourclient-image ">
                             </div>
                         </div>
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow pt-3 pb-3">
+                                <img src="assets/images/our-clients/logos/bigguard.jpg" alt="Big Guard"
+                                class="card-img-top ourclient-image ">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,10 +255,10 @@
                     <a href="https://www.facebook.com/b2b.compania" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
                     title="facebook"><img src="assets/images/social-media-icons/blue/icons8-facebook-50.png"></a>
                     <div class="vline">|</div>
-                    <a href="https://www.instagram.com/b2b.compania" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
+                    <a href="https://www.instagram.com/babysitter_to_business" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
                     title="instagram"><img src="assets/images/social-media-icons/blue/icons8-instagram-50.png"></a>
                     <div class="vline">|</div>
-                    <a href="https://vk.com/b2b.compania" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
+                    <a href="https://vk.com/babysitter_to_business" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
                     title="vk.com"><img src="assets/images/social-media-icons/blue/icons8-vk-50.png"
                     ></a>
                     <div class="vline">|</div>
@@ -249,9 +290,9 @@
 
         <script> // script for locating the timezone - For language detection purposes
         if(Intl.DateTimeFormat().resolvedOptions().timeZone != "Europe/Moscow"){
-            console.log("Showing option to switch to English");
+            console.log("Language : Russian");
         }else{
-            console.log("Showing the current site");
+            console.log("Language : English");
         }
         </script>
     </body>

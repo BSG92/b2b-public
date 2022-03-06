@@ -14,3 +14,6 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+document.querySelector('.owl-nav .owl-prev span').innerHTML="<";
+document.querySelector('.owl-nav .owl-next span').innerHTML=">";

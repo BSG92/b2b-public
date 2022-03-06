@@ -18,6 +18,13 @@ body{
     margin-left: 2em;
 }
 
+#header .dropdown > a:hover {
+    color: #FFCC00;
+}
+#header .dropdown-menu > li {
+    display: flex;
+}
+
 .navbar {
     background-color: white;
 }
@@ -194,6 +201,15 @@ a#call-back {
 
 .owl-carousel .item .card {
     height: 210px;
+}
+
+.owl-nav > button {
+    width: 3em;
+}
+
+.owl-nav > button > span {
+    font-size: 2em;
+    font-weight: bolder;
 }
 
 .ourclient-image { /* margins are used here to center the images */
