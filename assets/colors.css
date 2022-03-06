@@ -1,3 +1,21 @@
+.txt-yellow {
+    color: #FFCC00;
+}
+
+.txt-white {
+    color: #ffffff;
+}
+
 .txt-light-grey {
     color: #575f66;
+}
+
+.txt-description-white {
+    color: #F7F7F7;
+}
+
+/* Background colors */
+
+.bg-yellow {
+    background-color: #FFCC00;
 }

@@ -4,6 +4,20 @@ body{
     background-color: black;
 }
 
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#site-name {
+    color: #FFCC00;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Valera Round', Verdana, sans-serif; */
+    font-weight: bolder;
+    font-size: 3em;
+    margin-left: 2em;
+}
+
 .navbar {
     background-color: white;
 }
@@ -42,14 +56,13 @@ li.contact > div {
     font-weight: 600;
 }
 
-h1.title {
+/* h1.title {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* font-family: 'Valera Round'; */
     font-weight: bolder;
     font-size: 3em;
     margin-top: 50px;
-}
+} */
 
 .description {
     /* color already defined */
@@ -59,6 +72,7 @@ h1.title {
 .description h4 {
     letter-spacing: 5px;
     word-spacing: 10px;
+    font-weight: bold;
 }
 
 @media (max-width:510px) {
@@ -72,8 +86,8 @@ h1.title {
     }
 }
 
-@media (max-width:777px) {
-    h1.title {
+@media (max-width:991px) {
+    h1#site-name {
         font-size: 2em;
     }
 }
@@ -102,10 +116,14 @@ a#call-back {
     position: absolute;
     right: 50px;
 }
-
-@media (max-width: 426px) {
-    h1.title {
-        font-size: 1.60rem;
+@media (max-width: 767px) {
+    h1#site-name {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 473px) {
+    h1#site-name {
+        font-size: 1em;
     }
 
     .logo {
@@ -233,7 +251,7 @@ a#call-back {
 }
 
 .contact-footer > div:first-child {
-    color: white;
+    color: #FFCC00;
     margin-bottom: 10px;
 }
 
