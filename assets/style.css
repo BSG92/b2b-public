@@ -127,7 +127,18 @@ a#call-back {
     h1#site-name {
         font-size: 1.5em;
     }
+    
+    .description h4 {
+        margin-bottom: 20px;
+    }
 }
+
+@media (max-width: 490px) {
+    #contact_us {
+        width: 100%;
+    }
+}
+
 @media (max-width: 473px) {
     h1#site-name {
         font-size: 1em;
@@ -138,12 +149,8 @@ a#call-back {
         height: 60px;
     }
 
-    .contact_us {
-        margin-top: 80px;
-    }
-
-    #contact_us {
-        width: 100%;
+    .description h4 {
+        margin-bottom: 20px;
     }
 
     .call-back {
