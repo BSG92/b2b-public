@@ -1,11 +1,12 @@
 const select = document.querySelectorAll('#lang-select li div');
+
 const en = document.getElementById("en");
 const ru = document.getElementById("ru");
 const langs = ["en", "ru"];
 
 for (let i = 0; i < select.length; i++) {
     select[i].addEventListener('click', function(){
-        let lang = this.id; // language is define in the id attribute
+        let lang = this.id; // language is defined in the id attribute
         location.href = window.location.pathname + '#' + lang;
         location.reload();
         
@@ -37,6 +38,9 @@ function changeLanguage() {
         // Error handling when the element is not found
         let element = document.querySelector('.lng-'+key);
         if(element){
+            if (element.hasAttribute("placeholder")) {
+                element.attributes.placeholder.nodeValue = langArr[key][hash];
+            }
             element.innerHTML = langArr[key][hash];
         }
         // console.log(document.querySelector('.lng-'+key).innerHTML = langArr[key][hash]);
