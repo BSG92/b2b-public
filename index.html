@@ -25,9 +25,9 @@
                 <a class="btn dropdown-toggle txt-medium-white" href="#" role="button" id="langSelect" data-bs-toggle="dropdown" aria-expanded="false">
                     EN | Ру
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="langSelect">
-                    <li><img src="assets/images/ru.svg" style="height: 30px; width:30px;"><a class="dropdown-item active txt-medium-white" href="#">Русский</a></li>
-                    <li><img src="assets/images/en.svg" style="height: 30px; width:30px;"><a class="dropdown-item txt-medium-white" href="index-en.php">English</a></li>
+                <ul id="lang-select" class="dropdown-menu dropdown-menu-dark" aria-labelledby="langSelect">
+                    <li><img src="assets/images/ru.svg" style="height: 30px; width:30px;"><div class="dropdown-item txt-medium-white" id="ru" style="cursor: pointer;">Русский</div></li>
+                    <li><img src="assets/images/en.svg" style="height: 30px; width:30px;"><div class="dropdown-item txt-medium-white" id="en" style="cursor: pointer;">English</div></li>
                 </ul>
             </div>
             <h1 id="site-name" translate="no">Babysitter to Business</h1>
@@ -45,23 +45,23 @@
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">О нас</a>
+                    <a href="#about" class="nav-link lng-about_us">О нас</a>
                 </li>
                 <div class="vert-sep"></div>
                 <li class="nav-item">
-                    <a href="#services" class="nav-link">Услуги</a>
+                    <a href="#services" class="nav-link lng-services">Услуги</a>
                 </li>
                 <div class="vert-sep"></div>
                 <li class="nav-item">
-                    <a href="#cases" class="nav-link">Кейсы</a>
+                    <a href="#cases" class="nav-link lng-cases">Кейсы</a>
                 </li>
                 <div class="vert-sep"></div>
                 <li class="nav-item">
-                    <a href="#reviews" class="nav-link">Отзывы</a>
+                    <a href="#reviews" class="nav-link lng-reviews">Отзывы</a>
                 </li>
                 <div class="vert-sep"></div>
                 <li class="nav-item">
-                    <a href="#contacts" class="nav-link">Контакты</a>
+                    <a href="#contacts" class="nav-link lng-contacts">Контакты</a>
                 </li>
                 <div class="vert-sep"></div>
                 <li class="nav-item contact">
@@ -79,9 +79,9 @@
                     <!-- <h1 class="title" translate="no">Babysitter to Business</h1> -->
 
                     <div class="description">
-                        <h4 class="txt-medium-white">Помогаем бизнесу расти!</h4>
-                        <h4 class="txt-medium-white">Работаем 24/7 по всему миру</h4>
-                        <h4 class="txt-medium-white">Постоянный прогресс - основа нашей компаннии</h4>
+                        <h4 class="txt-medium-white lng-description_1">Помогаем бизнесу расти!</h4>
+                        <h4 class="txt-medium-white lng-description_2">Работаем 24/7 по всему миру</h4>
+                        <h4 class="txt-medium-white lng-description_3">Постоянный прогресс - основа нашей компаннии</h4>
                     </div>
                 </div>
 
@@ -91,7 +91,7 @@
                 </div> -->
             </div>
             <div class="contact_us">
-                <button type="button" id="contact_us" class="btn bg-yellow"
+                <button type="button" id="contact_us" class="btn bg-yellow lng-get_in_touch"
                 data-bs-toggle="modal" data-bs-target="#modal_getintouch">Свяжитесь с нами</button>
             </div>
         </div>
@@ -144,7 +144,7 @@
                     <div class="modal-body">
                         <div class="d-flex justify-content-between">
                             <div></div> <!-- Empty div to center the h5 using flex box -->
-                            <h5 style="font-weight: bold;" >Звоните и Пишите</h5>
+                            <h5 style="font-weight: bold;" class="lng-call_and_write">Звоните и Пишите</h5>
                             <button type="button" class="btn-close"
                             data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -181,27 +181,27 @@
                         </div>
 
                         <div style="margin-top: 20px; text-align: center;">
-                            <p style="font-weight: 600;">Или оставляйте заявку, а мы перезвоним вам</p>
+                            <p style="font-weight: 600;" class="lng-leave_a_message">Или оставляйте заявку, а мы перезвоним вам</p>
                             <form action="admin/submit-contacts.inc.php" method="post">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" id="name"
+                                    <input type="text" class="form-control lng-name" id="name"
                                     placeholder="Ваше имя">
                                 </div>
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" id="telephone"
+                                    <input type="text" class="form-control lng-telephone" id="telephone"
                                     placeholder="Ваш номер телефона">
                                 </div>
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" id="email"
-                                    placeholder="Email">
+                                    <input type="text" class="form-control lng-email" id="email"
+                                    placeholder="Почта">
                                 </div>
                                 <div class="input-group mb-5" style="display: grid;">
-                                    <button type="button" id="modal_getintouch_send" class="btn btn-primary"
+                                    <button type="button" id="modal_getintouch_send" class="btn btn-primary lng-submit"
                                     style="margin: auto; font-size:1.2em; font-weight: 600;">Отправить</button>
                                 </div>
                             </form>
                             <hr>
-                            <div class="fs-6 text-center">
+                            <div class="fs-6 text-center lng-privacy_policy">
                                 Отправляя данные, вы соглашаетесь с условиями
                                 <div class="txt-blue" style="text-decoration-line: underline; text-decoration-color: #002366;">Польсовательского соглашения</div>
                                 (Политики конфиденциальности)
@@ -214,7 +214,7 @@
 
         <section id="parent-ourClients">
             <div class="container-fluid">
-                <h3 class="text-center display-5 fw-bold">Наши клиенты</h3>
+                <h3 class="text-center display-5 fw-bold lng-our_clients">Наши клиенты</h3>
 
                 <div class="row">
                     <div class="owl-carousel owl-theme">
@@ -257,7 +257,7 @@
         </section>
 
         <div class="contact-footer">
-                <div>Присоединяйтесь к нам</div>
+                <div class="lng-join_us">Присоединяйтесь к нам</div>
                 <div class="social-media">
                     <a href="https://www.facebook.com/b2b.compania" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top"
                     title="facebook"><img src="assets/images/social-media-icons/blue/icons8-facebook-50.png"></a>
@@ -280,6 +280,9 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="assets/js/carousel.js"></script>
+        <!-- Language translations. translation.js should be included first -->
+        <script src="assets/js/translations.js"></script>
+        <script src="assets/js/lang.js"></script>
 
         <script>
             var intViewportWidth = window.innerWidth;
@@ -297,9 +300,9 @@
 
         <script> // script for locating the timezone - For language detection purposes
         if(Intl.DateTimeFormat().resolvedOptions().timeZone != "Europe/Moscow"){
-            console.log("Language : Russian");
-        }else{
             console.log("Language : English");
+        }else{
+            console.log("Language : Russian");
         }
         </script>
     </body>
