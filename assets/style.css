@@ -1,13 +1,13 @@
 @import url(colors.css);
 
 body{
-    background-color: black;
+    background: var(--background);
 }
 
 #header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 #site-name {
     color: #FFCC00;
@@ -43,10 +43,10 @@ body{
 
 div.vert-sep {
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: blue;
-    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: inherit;
+    height: 10px;
     width: 2px;
 }
 
