@@ -34,6 +34,7 @@ function changeLanguage() {
         en.classList.add("active");
     }
 
+    // langArr is loaded in the index.php page. It is included there, so can be accessed from here
     for(let key in langArr){
         // Error handling when the element is not found
         let element = document.querySelector('.lng-'+key);

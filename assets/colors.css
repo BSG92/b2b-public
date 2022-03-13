@@ -1,6 +1,9 @@
 :root {
     /* --gradient-background: linear-gradient(#0d1f41, #0c172c); */
     --background: #0c172c;
+    --navbar-grey: #1f2937;
+    --light-blue: #009ae4;
+    --light-grey: #575f66;
 }
 
 .txt-yellow {
@@ -17,6 +20,21 @@
 
 .txt-light-grey {
     color: #575f66;
+}
+.bg-light-grey {
+    background-color: #575f66;
+}
+
+.bg-navbar-gray {
+    background: #1f2937;
+}
+
+.txt-light-blue {
+    color: #009ae4;
+}
+
+.bg-light-blue {
+    background-color: #009ae4;
 }
 
 .txt-medium-white {
